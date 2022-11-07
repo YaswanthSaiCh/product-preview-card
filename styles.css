@@ -1,0 +1,124 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  background-color: hsl(30, 38%, 92%);
+}
+.container-wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 95vh;
+  margin: auto;
+}
+.container {
+  display: grid;
+  grid-template-columns: auto auto;
+  height: 400px;
+  width: 600px;
+  border-radius: 14px;
+  overflow: hidden;
+}
+.product-type-text {
+  color: hsl(228, 12%, 48%);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+.img-container {
+  background: url("./images/image-product-desktop.jpg");
+  background-size: 300px 400px;
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 300px;
+}
+.desc-container {
+  padding: 0.5rem 2rem;
+  height: 400px;
+  background: hsl(0, 0%, 100%);
+}
+.product-desc {
+  margin: 0;
+}
+.heading-text {
+  color: hsl(212, 21%, 14%);
+  font-family: "Fraunces", serif;
+  font-size: 32px;
+  margin: 0;
+}
+.price-container {
+  display: flex;
+  margin: 0;
+}
+.desc-text {
+  color: hsl(228, 12%, 48%);
+}
+.add-to-cart {
+  border: none;
+  outline: none;
+  background: hsl(158, 36%, 37%);
+  width: 100%;
+  border-radius: 10px;
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+}
+.icon {
+  margin-right: 10px;
+}
+.price-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+}
+.discounted-price {
+  font-family: "Fraunces", serif;
+  font-size: 32px;
+  color: hsl(158, 36%, 37%);
+  margin: 0;
+}
+.actual-price {
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 425px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 10px;
+    height: 600px;
+  }
+  .img-wrapper{
+    width: 100%;
+    height: 250px;
+  }
+  .img-container {
+    background: url(./images/image-product-desktop.jpg);
+    width: 100%;
+    height: 250px;
+    background-size: 340px 550px;
+    background-position-y: center;
+  }
+  .desc-container {
+    height: 100%;
+    padding: 15px 20px;
+  }
+  .price-container {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+  }
+  .actual-price {
+    margin-left: 20px;
+  }
+}
